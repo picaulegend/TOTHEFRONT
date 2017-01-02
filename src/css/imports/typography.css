@@ -1,38 +1,22 @@
-body {
-	font-size: 19px;
-	font-family: Georgia, serif;
-}
 
-p {
-	font-size: 1em; /* 19px */
-	line-height: 1.0526em; /* 20px */
-	margin: 0 0 1.0526em 0;
-}
-
-h1 {
-	font-size: 2.5263em; /* 48px */
-  	line-height: 1.2500em; /* 60px */
-  	margin-top: 0.4167em;  margin-bottom: 0.0000em;
-}
-
-h2 {
-	font-size: 1.8947em; /* 36px */
-	line-height: 1.1111em; /* 40px */
-	margin-top: 0.5556em;  margin-bottom: 0.0000em;
-}
-
-h3 {
-	font-size: 1.2632em; /* 24px */
-	line-height: 1.6667em; /* 40px */
-	margin-top: 0.8333em;  margin-bottom: 0.0000em;
-}
 
 
 
 /* formatting */
 h1, h2, h3 {
 	color: var(--dark);
-	font-family: 'Roboto', serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
+}
+
+p {
+	font-family: 'Domine', serif;
+}
+
+.post-details {
+	color: var(--dark);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size: 1.2rem;
 }

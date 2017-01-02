@@ -10,3 +10,11 @@
 main {
 	background: var(--light);
 }
+
+#menu {
+
+	& h4 {
+		text-align: center;
+	}
+	
+}

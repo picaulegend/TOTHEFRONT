@@ -2,10 +2,12 @@
 
 <div class="header">
   <h1>{{ .Title }}</h1>
+  {{ partial "post_meta.html" . }}
   <h2>{{ .Description }}</h2>
 </div>
 <div class="content">
   {{ .Content }}
+  {{ partial "contact-info.html" . }}
 </div>
 
 {{ partial "footer.html" . }}
