@@ -15,6 +15,11 @@ main {
 
 	& h4 {
 		text-align: center;
+		text-transform: uppercase;
+		font-weight: 900;
 	}
-	
+
+	& a {
+		color: var(--white), white;
+	}
 }
