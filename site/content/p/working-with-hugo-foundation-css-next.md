@@ -62,9 +62,10 @@ Furthermore, the grid allows you to specify the value of a column based on the s
 
 <img src="/img/semantic-html-structure.png" alt="semantic html site structure">
 
-If I now just give all the elements the right grid classes, I will most definitely end up with the intended structure. And as you might have noticed, that worked out fine. The only thing that rests is assigning unique formatting to a couple of elements. We can use ID's for that. As opposed to classes, ID's are only meant to use once. Probably part of the reason its called an ID.
+If I now just give all the elements the right grid classes, I will most definitely end up with the intended structure. And as you might have noticed, that worked out fine. The only thing that rests is assigning unique formatting to a couple of elements. We can use ID's for that. As opposed to classes, ID's are only meant to be used once. So while ID's are great for isolated formatting, they are not recommended for formatting that returns often.
 
+As an example we can take the buttons in the sidebar. There are four buttons which have both similarities and differences in formatting. Based on the unique colors I could choose to give each button a unique ID. I won't do that for two reasons. One: the categories labels in the post are formatted the same. Two: the buttons show so much similarity, I could easier uniquely format them by using a combination of classes.
 
-
+So in this case I have formatted the generic button tag with a couple of overlapping properties and created color classes, which can be used outside of buttons too, and a 'full' class that makes sure the buttons are shown full-width. I have created this specific class because the categories are not labeled in full-width in the posts. There I can just leave out the 'full' class.
 
 And with that we finished the basic layout. Now you might disagree with some of my explanations or decisions. Or maybe you want to commend me on them. It's fine either way. Below is my contact info.

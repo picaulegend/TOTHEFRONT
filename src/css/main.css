@@ -12,14 +12,56 @@ main {
 }
 
 #menu {
-
-	& h4 {
+	& h5 {
 		text-align: center;
-		text-transform: uppercase;
-		font-weight: 900;
 	}
 
 	& a {
 		color: var(--white), white;
+	}
+}
+
+button {
+	padding: 10px 15px;
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+	border-radius: 0;
+	text-align: left;
+
+	&.full {
+		width: 100%;
+	}
+
+	&.yellow {
+		background: var(--yellow);
+	}
+
+	&.red {
+		background: var(--red);
+	}
+
+	&.blue {
+		background: var(--blue);
+	}
+
+	&.green {
+		background: var(--green);
+	}
+
+	&.category-label {
+		background: var(--dark);
+	}
+}
+
+
+nav {
+	& ul {
+		list-style: none;
+		margin-left: 0;
+
+		& li {
+			margin-top: 10px;
+		}
 	}
 }

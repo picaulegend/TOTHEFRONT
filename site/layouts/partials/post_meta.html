@@ -12,7 +12,7 @@
   <div>
     <i class="fa fa-folder fa-fw"></i>
     {{ range $k, $v := .Params.categories }}
-      <a class="post-taxonomy-topic" href="{{ $baseUrl }}categories/{{ . | urlize }}">{{ . }}</a>{{ if lt $k (sub $count 1) }}&nbsp;&#47;{{ end }}
+      <a class="post-taxonomy-topic" href="{{ $baseUrl }}categories/{{ . | urlize }}"><button class="category-label">{{ . }}</button></a>{{ if lt $k (sub $count 1) }} {{ end }}
     {{ end }}
   </div>
   {{ end }}
