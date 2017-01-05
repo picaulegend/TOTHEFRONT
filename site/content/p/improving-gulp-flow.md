@@ -11,3 +11,9 @@ Code concatication
 Code optimization
 Image optimization
 
+
+
+To get a quick primer and hands-on tutorial, check out Zell's Gulp tutorial.
+
+What I added:
+- s3 deployment

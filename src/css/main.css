@@ -5,10 +5,14 @@
 #sidebar {
 	background: var(--dark);
 	color: var(--white);
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 main {
 	background: var(--light);
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 #menu {
@@ -50,7 +54,7 @@ button {
 	}
 
 	&.category-label {
-		background: var(--dark);
+
 	}
 }
 
