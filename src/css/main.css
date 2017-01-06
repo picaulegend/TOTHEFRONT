@@ -16,12 +16,18 @@ main {
 }
 
 #menu {
+	margin-bottom: 30px;
+
 	& h5 {
 		text-align: center;
 	}
 
 	& a {
 		color: var(--white), white;
+	}
+
+	& img {
+		margin-bottom: 30px;
 	}
 }
 
@@ -68,4 +74,8 @@ nav {
 			margin-top: 10px;
 		}
 	}
+}
+
+.summary {
+	margin-bottom: 30px;
 }
