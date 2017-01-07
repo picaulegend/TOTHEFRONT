@@ -31,18 +31,23 @@
     "file-loader": "^0.9.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
+    "gulp-cache": "^0.4.5",
+    "gulp-cached": "^1.1.1",
+    "gulp-changed": "^1.3.2",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-if": "^2.0.2",
+    "gulp-image": "^2.7.2",
+    "gulp-imagemin": "^3.1.1",
     "gulp-postcss": "^6.1.1",
     "gulp-util": "^3.0.7",
-    "gulp-clean-css": "^2.3.2",
     "imports-loader": "^0.6.5",
     "postcss-cssnext": "^2.7.0",
     "postcss-import": "^8.1.2",
     "postcss-loader": "^0.9.1",
+    "run-sequence": "^1.2.2",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
     "whatwg-fetch": "^1.0.0"
   },
-  "devDependencies": {
-    
-  }
+  "devDependencies": {}
 }

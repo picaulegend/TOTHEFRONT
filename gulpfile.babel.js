@@ -7,6 +7,9 @@ import cssnext from "postcss-cssnext";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import cleanCSS from "gulp-clean-css";
+import image from "gulp-image";
+import changed from 'gulp-changed';
+import runSequence from "run-sequence";
 import webpackConfig from "./webpack.conf";
 
 const browserSync = BrowserSync.create();
@@ -16,7 +19,13 @@ const defaultArgs = ["-d", "../dist", "-s", "site", "-v"];
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
 
-gulp.task("build", ["css", "js", "hugo"]);
+gulp.task('build', function (callback) {
+  runSequence('hugo', 
+    ['css', 'js', 'images'],
+    callback
+  )
+})
+
 gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 
 gulp.task("css", () => (
@@ -39,6 +48,13 @@ gulp.task("js", (cb) => {
     browserSync.reload();
     cb();
   });
+});
+
+gulp.task('images', function() {
+  return gulp.src('./src/img/*')
+    .pipe(changed('dist/img'))
+    .pipe(image())
+    .pipe(gulp.dest('./dist/img'))
 });
 
 gulp.task("server", ["hugo", "css", "js"], () => {

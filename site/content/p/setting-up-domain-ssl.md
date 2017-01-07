@@ -13,6 +13,8 @@ If you use an Amazon S3 bucket, there's a bit of extra configuration on the Amaz
 
 And why did we buy that domain again? Well, because we humans like words we understand better than a collection of numbers that don't make a lot of sense to us. And that's what server addresses are: numbers that are loved by computers, but meaningless to us mortals. So go ahead, put that info in your control panel so the computers understand.
 
+![SSL Security](/img/ssl-secure.jpg "SSL Security")
+
 ## SSL for security
 We've got our domain working now. The next step is to add an SSL certificate. Before I dive into why SSL is also important for a static site that doesn't handle any sensitive info, let me first explain what SSL is and does. SSL is a security protocol. A technology that makes ure that any data transferred between the user (browser) and website (server) is impossible to read by others.
 
@@ -26,7 +28,7 @@ Well, if you're a webmaster... you might be delighted to hear that Google allege
 The green padlock looks nice and gives your visitors the idea that you care about security. On top of that, it's free. Let's Encrypt is a non-profit organization that will hook you up with a modern SSL certificate for the public good. It's great and there's no reason you shouldn't add it to your domain. If you're using Netlify it's nothing more than a simple click. :smile::heart:
 
 #### Resources:
-http://www.howtogeek.com/122845/htg-explains-what-is-dns/
-https://letsencrypt.org
-https://www.netlify.com/docs/ssl/
-https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html
+* http://www.howtogeek.com/122845/htg-explains-what-is-dns/
+* https://letsencrypt.org
+* https://www.netlify.com/docs/ssl/
+* https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html
