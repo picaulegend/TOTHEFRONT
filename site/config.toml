@@ -2,4 +2,3 @@ baseurl = "/"
 languageCode = "en-us"
 title = "TOTHEFRONT.CO"
 enableEmoji=true
-googleAnalytics= "UA-89918186-1"
