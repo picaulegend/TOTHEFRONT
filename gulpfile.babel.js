@@ -6,6 +6,7 @@ import cssImport from "postcss-import";
 import cssnext from "postcss-cssnext";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
+import cleanCSS from "gulp-clean-css";
 import webpackConfig from "./webpack.conf";
 
 const browserSync = BrowserSync.create();
@@ -21,6 +22,7 @@ gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
     .pipe(postcss([cssnext(), cssImport({from: "./src/css/main.css"})]))
+    .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
