@@ -79,3 +79,27 @@ nav {
 .summary {
 	margin-bottom: 30px;
 }
+
+.post-details {
+	margin-bottom: 15px;
+}
+
+.post-categories {
+	margin-bottom: 15px;
+}
+
+.post-tags {
+	margin-bottom: 15px;
+}
+
+.contact-details {
+	color: var(--light);
+	background: var(--neutral);
+	margin-left: 0;
+	list-style: none;
+	padding: 15px;
+}
+
+.blog-description {
+	text-align: justify;
+}

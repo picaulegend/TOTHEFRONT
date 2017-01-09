@@ -9,10 +9,9 @@
   {{ if isset .Params "categories" }}
   {{ $count := len .Params.categories }}
   {{ if gt $count 0 }}
-  <div>
-    <i class="fa fa-folder fa-fw"></i>
+  <div class="post-categories">
     {{ range $k, $v := .Params.categories }}
-      <a class="post-taxonomy-topic" href="{{ $baseUrl }}categories/{{ . | urlize }}"><button class="category-label">{{ . }}</button></a>{{ if lt $k (sub $count 1) }} {{ end }}
+      <a href="{{ $baseUrl }}categories/{{ . | urlize }}"><button class="category-label">{{ . }}</button></a>{{ if lt $k (sub $count 1) }} {{ end }}
     {{ end }}
   </div>
   {{ end }}

@@ -4,17 +4,15 @@
 {{ if isset .Params "tags" }}
   {{ $count := len .Params.tags }}
   {{ if gt $count 0 }}
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
+  <div class="post-tags">
     {{ range $k, $v := .Params.tags }}
-      <a class="post-taxonomy-tag" href="{{ $baseUrl }}tags/{{ . | urlize }}">{{ . }}</a>{{ if lt $k (sub $count 1) }}&nbsp;&#47;{{ end }}
+      <a href="{{ $baseUrl }}tags/{{ . | urlize }}"><small>{{ . }}</small></a>,{{ if lt $k (sub $count 1) }}{{ end }}
     {{ end }}
   </div>
   {{ end }}
   {{ end }}
 
-
-	<ul>
+	<ul class="contact-details">
 		<li>Gmail: picauly88</li>
 		<li>Twitter: @ma5ly</li>
 		<li>Github: picaulegend</li>
