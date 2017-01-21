@@ -1,5 +1,5 @@
 +++
-title = "working with hugo, foundation and css next"
+title = "Working with Hugo, Foundation and CSS Next"
 date = "2017-01-02T10:30:10+01:00"
 draft = false
 categories = ["code", "design"]

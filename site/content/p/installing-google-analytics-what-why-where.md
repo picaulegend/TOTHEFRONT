@@ -1,5 +1,5 @@
 +++
-title = "installing google analytics: what, why and where"
+title = "Installing Google Analytics: what, why and where"
 draft = false
 date = "2017-01-11T09:53:51+01:00"
 categories = ["code"]

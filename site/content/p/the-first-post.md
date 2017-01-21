@@ -1,5 +1,5 @@
 +++
-title = "the first post"
+title = "The first post"
 draft = false
 date = "2017-01-01T15:08:25+01:00"
 

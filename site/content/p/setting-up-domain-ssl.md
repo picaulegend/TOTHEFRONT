@@ -1,5 +1,5 @@
 +++
-title = "setting up a domain and ssl"
+title = "Setting up a Domain and SSL"
 draft = false
 date = "2017-01-05T19:51:40+01:00"
 categories = ["code"]
